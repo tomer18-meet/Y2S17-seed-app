@@ -13,7 +13,7 @@ You will need to fork this repo and then start working on your own project.
 cd ~/Desktop/
 git clone ...
 cd Y2S17-seed-app/
-source initalize.sh
+source initialize.sh
 ```
 
 ### 2. Structure
