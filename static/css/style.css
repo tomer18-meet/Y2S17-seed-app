@@ -1,3 +1,36 @@
-h1 {
-  color: blue;
+.button {
+    background-color: none;
+    border: none;
+    color: black;
+    padding: 1px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: center;
+    cursor: pointer; }
+
+body {
+    background: url("/static/img/back.jpg");
+    overflow: auto;
+}
+
+#center {
+    margin: auto;
+    width:18%;
+    border: none;
+    padding: 45px;
+    align-content: left;
+    }
+
+
+ 
+#list {
+    background-color:blue; 
+    display: inline-block;
+    
+    padding: 50px;
+}
+
+
 }

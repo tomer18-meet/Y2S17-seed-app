@@ -1,8 +1,7 @@
 # flask imports
 from flask import Flask, render_template, request, redirect, url_for
-
 # SQLAlchemy
-from model import Base, YourModel
+from model import *
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -13,7 +12,20 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-
 @app.route('/')
-def hello_world():
+def IDeAS():
+    #show_mainpage(mostrecent)
     return render_template('index.html')
+
+@app.route('/categories')
+def show_category_mainpage():
+	render_template('my_categories.html')
+
+@app.route('/categories/<string:catname>')
+def show_category(catname):
+	return render_template('category.html')
+
+@app.route('/categories/sub/<string:subcatname>')
+def show_category_2(name):
+	return render_template()	
+
