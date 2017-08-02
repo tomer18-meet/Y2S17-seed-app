@@ -13,19 +13,25 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 @app.route('/')
-def IDeAS():
-    #show_mainpage(mostrecent)
+def home():
     return render_template('index.html')
 
+@app.route('/sign_up')
+def sign_up():
+    return render_template()
+
 @app.route('/categories')
-def show_category_mainpage():
-	render_template('my_categories.html')
+def categories():
+    return render_template('categories.html')
 
-@app.route('/categories/<string:catname>')
-def show_category(catname):
-	return render_template('category.html')
+@app.route('/categories/<string:cat>')
+def selected_category(cat):
+    return render_template('selected_category.html', category=cat)
 
-@app.route('/categories/sub/<string:subcatname>')
-def show_category_2(name):
-	return render_template()	
+@app.route('/favorites')
+def favorities():
+    return render_template('favorites.html')
 
+@app.route('/sign_in')
+def sign_in():
+    return render_template('sign_in.html')
