@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Categories</title>
+</head>
+<body class="Categories">
+<p>Find the tutorial of your choice:</p>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+	<h1 style="color:pink;font-family:sans-serif;text-align: center;">Choose a category and start Learning!</h1>
+	<center>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div>
+							<img src="{{ url_for('static', filename='music.jpg') }}" style="width:300px;height:300px;"><br><br>
+							<h4 style="text-align:center">Music Genres</h4>
+						</div>
+					</td>
+					<td>
+					<div>
+					<img src="{{url_for('static', filename='logo.jpg') }}" style="width:300px;height:300px;"><br><br>
+
+							<h4 style="text-align:center">Hairstyles </h4></div></td>
+				</tr>
+				<tr>
+
+					<td>
+					<div> <img src="{{ url_for('static', filename='dancing.png') }}" style="width:300px;height:300px;margin-bottom: 20px;"><br><br>
+
+												<h4 style="text-align:center">Dance Genres</h4></div></td>
+					<td><div><img src="{{ url_for('static', filename='languages.png') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center">Languages</h4></div></td>
+				</tr>
+				<tr>
+					<td><div><img src="{{ url_for('static', filename='food.jpg') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center"><a href="127.0.0.1:5000/categories/kh,kf">Food Recipes</a></h4></div></td>
+					<td><div><img src="{{ url_for('static', filename='facialcare.png') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center">Facial Care</h4></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>
