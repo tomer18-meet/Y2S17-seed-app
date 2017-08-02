@@ -19,6 +19,7 @@ class Video(Base):
     video          = Column(String)
     username       = Column(String)
     date           = Column(String)
+    category       = Column(String)
     # ADD YOUR FIELD BELOW ID
 
 # IF YOU NEED TO CREATE OTHER TABLE 

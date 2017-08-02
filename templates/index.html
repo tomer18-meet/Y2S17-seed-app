@@ -11,14 +11,15 @@
   </head>
   <body>
     
-    <button><a href="http://127.0.0.1:5000/sign_in">Sign In</a></button>
-    <button>Sign Up</button>
+    <button><a href="{{url_for('sign_in')}}">Sign In</a></button>
+    <button><a href="{{url_for('sign_up')}}">Sign Up</button>
      
     <div id="center">
     <span id="logo"> <img src = "{{ url_for('static', filename='img/hihi.png')}}"/></span> </div>
     <div class="button">
-    <button class="btn"><a href="http://127.0.0.1:5000/">Home and Most Popular Videos</a></bu
-    <button class="btn"><a href="{{url_for('categories')}}">Categories</a></button>
+
+    <button class="btn"><a href="http://127.0.0.1:5000/">Home and Most Popular Videos</a>
+    <button class="btn"> <a href="{{url_for('categories')}}">Categories</a></button>
     <button class="btn"><a href="{{url_for('favorites')}}">Favorites</a></button>
     <button class="btn"><a href="{{url_for('profile')}}">My Profile</a></button>
 

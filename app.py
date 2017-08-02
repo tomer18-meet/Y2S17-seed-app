@@ -26,7 +26,8 @@ def categories():
 
 @app.route('/categories/<string:cat>')
 def selected_category(cat):
-    return render_template('selected_category.html', category=cat)
+	videos = session.query(Video).filter_by(category=cat).all()
+    return render_template('category.html', videos = videos, cat = cat)
 
 @app.route('/favorites')
 def favorites():
@@ -36,7 +37,8 @@ def favorites():
 def sign_in():
     return render_template('sign_in.html')
 
-@app.route('/profile/<int:id>')
+@app.route('/profile')
 def profile(id):
-    profile = session.query(user).filter_by(id=id).first()
+   # profile = session.query(User).filter_by(id=id).first()
     return render_template('profile.html', profile=profile )
+
