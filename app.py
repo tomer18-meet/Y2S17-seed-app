@@ -18,7 +18,7 @@ def home():
 
 @app.route('/sign_up')
 def sign_up():
-    return render_template()
+    return render_template('sign_up.html')
 
 @app.route('/categories')
 def categories():
@@ -38,5 +38,5 @@ def sign_in():
 
 @app.route('/profile/<int:id>')
 def profile(id):
-	profile = session.query(user).filter_by(id=id).first()
+    profile = session.query(user).filter_by(id=id).first()
     return render_template('profile.html', profile=profile )

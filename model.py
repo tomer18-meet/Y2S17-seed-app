@@ -11,7 +11,6 @@ class User(Base):
     age			   = Column(Integer)
     interests      = Column(String)
     bio			   = Column(String)
-    email          = Column(String)
     picture        = Column(String) #link to the picture
 
 class Video(Base):
