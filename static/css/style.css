@@ -11,7 +11,7 @@
     cursor: pointer; }
 
 body {
-    background-image: url("/static/img/pretty.jpg");
+    background-image: url("/static/img/bluebackground.jpg");
     overflow: auto;
 }
 
@@ -57,9 +57,17 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 100%;
+    width: 13%;
 }
 
 /*.Categories {
     background-image: url("/static/img/galaxy.gif");
 }*/
+#Home {
+    border: none;
+    color: gray;
+    padding-bottom: 0px;
+
+}
+
+ 
