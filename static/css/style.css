@@ -11,7 +11,7 @@
     cursor: pointer; }
 
 body {
-    background: url("/static/img/pretty.jpg");
+    background-image: url("/static/img/pretty.jpg");
     overflow: auto;
 }
 
@@ -60,6 +60,6 @@ input[type=text]:focus {
     width: 100%;
 }
 
-.Categories {
+/*.Categories {
     background-image: url("/static/img/galaxy.gif");
-}
+}*/
