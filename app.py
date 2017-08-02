@@ -38,5 +38,5 @@ def sign_in():
 
 @app.route('/profile/<int:id>')
 def profile(id):
-	profile = session.query(user).filter_by(id=id).first()
-    return render_template('profile.html', profile=profile )
+    profile1 = session.query(User).filter_by(id=id).first()
+    return render_template('profile.html', profile=profile1 )
