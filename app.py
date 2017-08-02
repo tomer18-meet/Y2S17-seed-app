@@ -29,9 +29,14 @@ def selected_category(cat):
     return render_template('selected_category.html', category=cat)
 
 @app.route('/favorites')
-def favorities():
+def favorites():
     return render_template('favorites.html')
 
 @app.route('/sign_in')
 def sign_in():
     return render_template('sign_in.html')
+
+@app.route('/profile/<int:id>')
+def profile(id):
+	profile = session.query(user).filter_by(id=id).first()
+    return render_template('profile.html', profile=profile )

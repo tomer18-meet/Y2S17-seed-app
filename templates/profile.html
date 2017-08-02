@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>profile</title>
+   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="profile">
+<header>
+  <h1>{{profile.username}}</h1>
+</header>
+
+<nav class="nav">
+<img src = "{{profile.picture}}">
+</nav>
+
+<article class="bio">
+  <h1>bio</h1>
+  <p>{{profile.bio}}</p>
+ 
+</article>
+
+<footer><a href="http://meet.mit.edu">MEET </a> </footer>
+</div>
+
+<div class="profile_name">
+<header>
+  <h1>Linda Steg</h1>
+</header>
+</div>
+</body>
+</html>
