@@ -33,4 +33,9 @@ body {
 }
 
 
-}
+.btn {
+    border: none;
+    color: gray;
+    padding: 1px 4px;
+    font-size: 26px;
+    cursor: pointer;
