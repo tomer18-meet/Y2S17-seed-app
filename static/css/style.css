@@ -11,7 +11,7 @@
     cursor: pointer; }
 
 body {
-    background: url("/static/img/pretty.jpg");
+    background-image: url("/static/img/pretty.jpg");
     overflow: auto;
 }
 
@@ -80,3 +80,26 @@ footer {background: #aaa;color:white;}
     .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
     footer {-webkit-order:3;order:3;}
 }
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+/*.Categories {
+    background-image: url("/static/img/galaxy.gif");
+}*/

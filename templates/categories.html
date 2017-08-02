@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<title>Categories</title>
+</head>
+<body class="Categories">
+<p>Find the tutorial of your choice:</p>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+	<h1 style="color:pink;font-family:sans-serif;text-align: center;">Choose a category and start Learning!</h1>
+	<center>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div class = "my_class">
+							<img src="{{ url_for('static', filename='img/music.png') }}" style="width:300px;height:300px;"><br><br>
+							<h4 style="text-align:center">Music Genres</h4>
+						</div>
+					</td>
+					<td>
+					<div>
+					<img src="{{url_for('static', filename='img/logo.jpg') }}" style="width:300px;height:300px;"><br><br>
+
+							<h4 style="text-align:center">Hairstyles </h4></div></td>
+				</tr>
+				<tr>
+
+					<td>
+					<div> <img src="{{ url_for('static', filename='img/dancing.png') }}" style="width:300px;height:300px;margin-bottom: 20px;"><br><br>
+
+												<h4 style="text-align:center">Dance Genres</h4></div></td>
+					<td><div><img src="{{ url_for('static', filename='img/languages.png') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center">Languages</h4></div></td>
+				</tr>
+				<tr>
+					<td><div><img src="{{ url_for('static', filename='img/food.jpg') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center"><a href="127.0.0.1:5000/categories/kh,kf">Food Recipes</a></h4></div></td>
+					<td><div><img src="{{ url_for('static', filename='img/facialcare.png') }}" style="width:300px;height:300px;"><br><br>
+
+												<h4 style="text-align:center">Facial Care</h4></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>
