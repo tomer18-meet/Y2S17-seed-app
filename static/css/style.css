@@ -11,7 +11,7 @@
     cursor: pointer; }
 
 body {
-    background: url("/static/img/back.jpg");
+    background: url("/static/img/pretty.jpg");
     overflow: auto;
 }
 
@@ -19,7 +19,7 @@ body {
     margin: auto;
     width:18%;
     border: none;
-    padding: 45px;
+    padding: 80px;
     align-content: left;
     }
 
@@ -36,6 +36,8 @@ body {
 .btn {
     border: none;
     color: gray;
-    padding: 1px 4px;
+    padding: 1px 8px;
     font-size: 26px;
     cursor: pointer;
+    background-color: none;}
+
