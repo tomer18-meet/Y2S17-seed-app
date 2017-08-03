@@ -1,29 +1,10 @@
-.button {
-    background-color: none;
-    border: none;
-    color: black;
-    padding: 1px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: center;
-    cursor: pointer; }
 
 body {
-    background-image: url("/static/img/bluebackground.jpg");
+    background-image: url("/static/img/knowledge.jpg");
     overflow: auto;
     
 }
-
-#center {
-    margin: auto;
-    width:18%;
-    border: none;
-    padding: 80px;
-    align-content: left;
-    }
-
+s
 
  
 #list {
@@ -35,13 +16,21 @@ body {
 
 
 .btn {
+    background-color: white;
     border: none;
-    color: gray;
-    padding: 1px 8px;
-    font-size: 26px;
+    border-radius: 0px;
+    color: white;
+    padding: 15px 128.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
-    background-color: none;}
+    float: left;}
 
+.btn: hover {
+    background-color: white;
+}
 #profile {
 	background: url("/static/img/pretty.jpg");
 	overflow: auto;
@@ -102,13 +91,18 @@ input[type=text]:focus {
 }
 
 
-#Home {
+#home {
     border: none;
     color: gray;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 
 }
 
- 
-
+#logo
+{   position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    border: none;
+}
 
