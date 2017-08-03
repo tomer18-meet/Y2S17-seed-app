@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1 align="center" style="color:gray; font-family:Courier">Share Your Knowledge With Us!</h1>
+<div align="center">
+	<form action="{{ url_for('sign_up') }}" method = 'post'>
+	<input type = "text" name="username" placeholder="Username"><br><br>
+	<input type="password" name="password" placeholder= "Password"><br><br>
+	<input type="text" name="interests" placeholder="Interests"><br><br>
+	<input type="text" name="picture_url" placeholder="Picture"><br><br>
+	<input type="radio" name="gender" value="male"> Male<br><br>
+	  <input type="radio" name="gender" value="female"> Female<br><br>
+	  <input type="radio" name="gender" value="other"> Other<br><br>
+	<input class="button" type="submit" value="Submit">
+	</form>
+</div>
+</body>
+</html>
