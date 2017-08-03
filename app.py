@@ -14,7 +14,8 @@ session = DBSession()
 
 @app.route('/')
 def home():
-	return render_template('index.html')
+	videos = session.query(Video).all()
+	return render_template('index.html', videos = videos)
 
 @app.route('/sign_up')
 def sign_up():
@@ -42,3 +43,18 @@ def profile(profile_id):
 	profile = session.query(User).filter_by(id=profile_id).first()
 	return render_template('profile.html', profile = profile)
 
+@app.route('/add_video', methods = ['GET', 'POST'])
+def add_video():
+	if request.method == 'GET':
+
+		return render_template('add_video.html')
+	else:
+		video_url = request.form.get("video_url")
+		post_user = request.form.get("username")
+		post_cat = request.form.get("category")
+		new_video = Video(video = video_url, 
+			username = post_user, 
+			category = post_cat)
+		session.add(new_video)
+		session.commit()
+		return redirect(url_for("home"))

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>category</title>
+
+	<title>{{cat}}</title>
+
 	 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
       <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
 
@@ -12,6 +14,6 @@
 <body>
 <h1>{{cat}}</h1>
 
-{{%for category in categories%}}
+
 </body>
 </html>
