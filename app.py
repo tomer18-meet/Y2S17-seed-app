@@ -24,7 +24,7 @@ def sign_up():
 
 @app.route('/categories')
 def categories():
-    return render_template('categories.html')
+	return render_template('categories.html')
 
 @app.route('/categories/<string:cat>')
 def selected_category(cat):
