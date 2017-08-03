@@ -18,12 +18,24 @@
     <span id="logo"> <img src = "{{ url_for('static', filename='img/hihi.png')}}"/></span> </div>
     <div class="button">
 
-    <button class="btn"><a href="http://127.0.0.1:5000/">Home and Most Popular Videos</a>
+    <button class="btn"><a href="{{url_for('home')}}">Home and Most Popular Videos</a>
     <button class="btn"> <a href="{{url_for('categories')}}">Categories</a></button>
     <button class="btn"><a href="{{url_for('favorites')}}">Favorites</a></button>
-    <button class="btn"><a href="{{url_for('profile')}}">My Profile</a></button>
-
-   
+    <button class="btn"><a href="{{url_for('profile')}}">My Profile</a></button>   
   </div>
+
+  <div id="video-container">
+  {% for video in videos %}
+  <div class="video-display">
+  <h3>{{video.category}} by {{video.username}}</h3>
+  <br>
+  <iframe width="420" height="315"
+src="{{video.video}}">
+</iframe>
+  
+  </div>
+  {% endfor %}
+  </div> 
   </body>
+
 </html>
