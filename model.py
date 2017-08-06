@@ -8,10 +8,10 @@ class User(Base):
     id             = Column(Integer, primary_key=True)
     username       = Column(String)
     password       = Column(String)
-    age			   = Column(Integer)
     interests      = Column(String)
     bio			   = Column(String)
-    picture        = Column(String) #link to the picture
+    picture        = Column(String) 
+    gender         = Column(String) #link to the picture
 
 class Video(Base):
     __tablename__  = 'video'

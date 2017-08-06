@@ -17,9 +17,23 @@ def home():
 	videos = session.query(Video).all()
 	return render_template('index.html', videos = videos)
 
-@app.route('/sign_up')
+@app.route('/sign_up', methods = ['GET', 'POST'])
 def sign_up():
-	return render_template('sign_up.html')
+	if request.method == 'GET':
+
+		return render_template('sign_up.html')
+	else:
+		new_username = request.form.get("username")
+		new_password = request.form.get("password")
+		new_interests = request.form.get("interests")
+		new_bio = request.form.get("bio")
+		new_gender = request.form.get("gender") 
+		new_picture = request.form.get("picture")
+		new_username = User(username = new_username, password = new_password, interests = new_interests, bio = new_bio, gender = new_gender, picture = new_picture)	 
+		session.add(new_username)
+		session.commit()
+		return redirect(url_for("home"))	
+	
 
 @app.route('/categories')
 def categories():
@@ -34,9 +48,23 @@ def selected_category(cat):
 def favorites():
 	return render_template('favorites.html')
 
-@app.route('/sign_in')
+@app.route('/sign_in', methods = ['GET', 'POST'])
 def sign_in():
-	return render_template('sign_in.html')
+	if request.method == 'GET':
+		return render_template('sign_in.html')
+	else:
+		username_data=request.form.get("UserName")
+		password     =request.form.get("Password")
+		user  =session.query(User).filter_by(username=username_data).first()
+		db_password = user.password
+		if password == db_password:
+			return render_template('profile.html', profile = user)
+		else:
+			return render_template('sign_in.html')
+			
+		
+	
+
 
 @app.route('/profile/<int:profile_id>')
 def profile(profile_id):
