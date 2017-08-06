@@ -6,21 +6,17 @@
      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<div class="profile">
-  <h1 align="center">{{profile.username}}</h1>
-
-
-<div class="picture">
-<img src = "{{profile.picture}}">
+<div id="logo"> <img src = "{{ url_for('static', filename='img/newlogo.png')}}"/> 
+<textarea></textarea>
 </div>
 
-<div class="bio">
-  <h1>bio</h1>
-  <p>{{profile.bio}}</p>
- 
-</div>
-<button><a href="http://127.0.0.1:5000/">Home</a></button>
-<footer><a href="http://meet.mit.edu">MEET </a> </footer>
-
+<center>
+<br>
+<h1 style="color: gray">My Profile</h1>
+</center>
+<img src="{{ url_for('static', filename='img/profile_picture.png')}}">
+<div>
+<button id="home"><a href="http://127.0.0.1:5000/">Home</a></button>
+<footer><a href="http://meet.mit.edu">MEET </a> </footer></div>
 </body>
 </html>
