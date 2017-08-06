@@ -7,16 +7,34 @@
 </head>
 <body>
 <div id="logo"> <img src = "{{ url_for('static', filename='img/newlogo.png')}}"/> 
+<<<<<<< HEAD
+
+</div>
+=======
 <</div>
+>>>>>>> 92fd65c7a72df854d58c34397cd20a528b1e8aee
 
 <center>
 <br>
 <h1 style="color: gray; font-style: Helvetica;">My Profile</h1>
 </center>
+<<<<<<< HEAD
 <div style="float:left;padding-right:30px"><img src="{{profile.picture}}" style="width:400px;clip-path: circle(300px at center)";>
+=======
+<<<<<<< HEAD
+<div style="float:left;padding-right:30px;"><img src="{{ url_for('static', filename='img/profile_picture.png')}}"></div>
+<div style="margin-top:30px;">{{profile.name}}</div>
+<br>
+<div>
+<button id="home" style="position:absolute; left:20px; top:20px;"><a href="http://127.0.0.1:5000/">Home</a></button>
+<footer style="position:absolute; bottom:20px; left:20px;"><a href="http://meet.mit.edu">MEET </a> </footer></div>
+=======
+<div style="float:left;padding-right:30px"<{{profile.picture}}>
+>>>>>>> 07aff9f02e21ba88e172a93f948557c3412ebdc6
 </div>
 <div style="margin-top:60px;padding-left: 60px; font-size: 20px; font-family: Helvetica;">{{profile.username}}<br>{{profile.interests}}<br>{{profile.bio}}</div><br><br><br><br>
 <button id="home"><a href="{{url_for('home')}}">Home</a></button>
 <footer><a href="http://meet.mit.edu">MEET </a> </footer></div>
+>>>>>>> 92fd65c7a72df854d58c34397cd20a528b1e8aee
 </body>
 </html>
