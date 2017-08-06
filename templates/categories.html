@@ -11,13 +11,10 @@
 	<title>Categories</title>
 </head>
 <body class="Categories">
-<div>
-<p>Find the tutorial of your choice:</p>
+
 <div id="logo"> <img src = "{{ url_for('static', filename='img/newlogo.png')}}"/> </div>
-</div>
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
+
+
 
 	<h1 style="color:gray;font-family:sans-serif;text-align: center;">Choose a category and start Learning!</h1>
 	<center>
@@ -27,24 +24,24 @@
 					<td>
 						<div class = "my_class">
 							<img src="{{ url_for('static', filename='img/music.png') }}" style="width:300px;height:300px;"><br><br>
-							<h4 style="text-align:center">Music Genres</h4>
+							<h4 style="text-align:center"><a href="http://127.0.0.1:5000/categories/Music">Music Genres</a></h4>
 						</div>
 					</td>
 					<td>
 					<div>
 					<img src="{{url_for('static', filename='img/logo.jpg') }}" style="width:300px;height:300px;"><br><br>
 
-							<h4 style="text-align:center">Hairstyles </h4></div></td>
+							<h4 style="text-align:center"><a href="http://127.0.0.1:5000/categories/Hairstyles">Hairstyles</a></h4></div></td>
 				</tr>
 				<tr>
 
 					<td>
 					<div> <img src="{{ url_for('static', filename='img/dancing.png') }}" style="width:300px;height:300px;margin-bottom: 20px;"><br><br>
 
-												<h4 style="text-align:center">Dance Genres</h4></div></td>
+												<h4 style="text-align:center"><a href="http://127.0.0.1:5000/categories/Dance-Genres">Dance Genres</a></h4></div></td>
 					<td><div><img src="{{ url_for('static', filename='img/languages.png') }}" style="width:300px;height:300px;"><br><br>
 
-												<h4 style="text-align:center">Languages</h4></div></td>
+												<h4 style="text-align:center"><a href="http://127.0.0.1:5000/categories/Languages">Languages</a></h4></div></td>
 				</tr>
 				<tr>
 					<td><div><img src="{{ url_for('static', filename='img/food.gif') }}" style="width:300px;height:300px;"><br><br>
@@ -52,7 +49,7 @@
 												<h4 style="text-align:center"><a href="{{ url_for('selected_category', cat='food')}}">Food Recipes</a></div></td>
 					<td><div><img src="{{ url_for('static', filename='img/facialcare.png') }}" style="width:300px;height:300px;"><br><br>
 
-												<h4 style="text-align:center">Facial Care</h4></div></td>
+												<h4 style="text-align:center"><a href="http://127.0.0.1:5000/categories/Facial-Care">Facial-Care</a></h4></div></td>
 				</tr>
 			</tbody>
 		</table>
