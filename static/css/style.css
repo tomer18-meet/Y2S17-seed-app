@@ -1,14 +1,11 @@
 
 body {
-<<<<<<< HEAD
     background-image: url("homepage.jpg");
-=======
     background-image: url("/static/img/knowledge.jpg");
->>>>>>> 0c770e1e9aaf917d625039efc34290b4da1df152
     overflow: auto;
     
 }
-s
+
 
  
 #list {
