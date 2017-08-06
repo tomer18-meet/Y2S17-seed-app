@@ -7,6 +7,7 @@
 </head>
 
 <body >
+<div id="logo"> <img src = "{{ url_for('static', filename='img/newlogo.png')}}"/> </div>
 <div>
 <center>
     <h1 style="color:gray">Enter Your UserName and Password</h1>
@@ -14,7 +15,7 @@
     <br>
     <br>
     <br>
-    <form >
+    <form method = "POST" >
     User Name:<br>
     <input type="text" name="UserName" >
     <br>

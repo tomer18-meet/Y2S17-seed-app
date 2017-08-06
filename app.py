@@ -57,9 +57,12 @@ def sign_in():
 		password     =request.form.get("Password")
 		user  =session.query(User).filter_by(username=username_data).first()
 		db_password = user.password
+		print("          printing password",password,db_password)
 		if password == db_password:
+			print("GOT TO HERE")
 			return render_template('profile.html', profile = user)
 		else:
+			print("incorrect password")
 			return render_template('sign_in.html')
 			
 		
