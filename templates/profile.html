@@ -11,11 +11,11 @@
 
 <center>
 <br>
-<h1 style="color: gray">My Profile</h1>
+<h1 style="color: gray; font-style: Helvetica;">My Profile</h1>
 </center>
-<div style="float:left;padding-right:30px"<{{profile.picture}}>
+<div style="float:left;padding-right:30px"><img src="{{profile.picture}}" style="width:400px;clip-path: circle(300px at center)";>
 </div>
-<div style="margin-top:30px;">{{profile.username}}</div>
+<div style="margin-top:60px;padding-left: 60px; font-size: 20px; font-family: Helvetica;">{{profile.username}}<br>{{profile.interests}}<br>{{profile.bio}}</div><br><br><br><br>
 <button id="home"><a href="{{url_for('home')}}">Home</a></button>
 <footer><a href="http://meet.mit.edu">MEET </a> </footer></div>
 </body>

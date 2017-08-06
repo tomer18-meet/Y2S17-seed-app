@@ -28,7 +28,7 @@ def sign_up():
 		new_interests = request.form.get("interests")
 		new_bio = request.form.get("bio")
 		new_gender = request.form.get("gender") 
-		new_picture = request.form.get("picture")
+		new_picture = request.form.get("picture_url")
 		new_username = User(username = new_username, password = new_password, interests = new_interests, bio = new_bio, gender = new_gender, picture = new_picture)	 
 		session.add(new_username)
 		session.commit()
