@@ -29,8 +29,7 @@ body {
     cursor: pointer;
     float: left;}
 
-<<<<<<< HEAD
-=======
+
 .btn: hover {
     background-color: white;
 }
@@ -55,7 +54,7 @@ body {
 .article {
     text-align: left;
 }
->>>>>>> 0c770e1e9aaf917d625039efc34290b4da1df152
+
 
 
 input[type=text] {

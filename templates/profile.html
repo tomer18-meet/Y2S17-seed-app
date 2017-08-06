@@ -7,17 +7,16 @@
 </head>
 <body>
 <div id="logo"> <img src = "{{ url_for('static', filename='img/newlogo.png')}}"/> 
-<h4 style="color:blue"> My Bio</h4>
-<textarea id="bio"></textarea>
-</div>
+<</div>
 
 <center>
 <br>
 <h1 style="color: gray">My Profile</h1>
 </center>
-<img src="{{ url_for('static', filename='img/profile_picture.png')}}">
-<div>
-<button id="home"><a href="http://127.0.0.1:5000/">Home</a></button>
+<div style="float:left;padding-right:30px"<{{profile.picture}}>
+</div>
+<div style="margin-top:30px;">{{profile.username}}</div>
+<button id="home"><a href="{{url_for('home')}}">Home</a></button>
 <footer><a href="http://meet.mit.edu">MEET </a> </footer></div>
 </body>
 </html>
