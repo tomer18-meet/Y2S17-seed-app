@@ -1,7 +1,7 @@
 
 body {
-    background-image: url("homepage.jpg");
-    background-image: url("/static/img/knowledge.jpg");
+    background-image: url("newnewpage.jpg");
+    background-image: url("/static/img/newnewpage.jpg");
     overflow: auto;
     
 }
@@ -9,7 +9,7 @@ body {
 
  
 #list {
-    background-color:blue; 
+    background-color:white; 
     display: inline-block;
     
     padding: 50px;
@@ -17,17 +17,20 @@ body {
 
 
 .btn {
-    background-color: white;
+    background-color: #555555;
     border: none;
     border-radius: 0px;
     color: white;
     padding: 15px 10%;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    float: left;}
+    float: left;
+    font-family: Courier;
+    font-color: white;}
+
+
 
 
 .btn: hover {
