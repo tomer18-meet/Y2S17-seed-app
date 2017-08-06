@@ -11,8 +11,10 @@
 	<title>Categories</title>
 </head>
 <body class="Categories">
+<div>
 <p>Find the tutorial of your choice:</p>
-
+<div id="logo"> <img src = "{{ url_for('static', filename='img/hihi.png')}}"/> </div>
+</div>
 <form>
   <input type="text" name="search" placeholder="Search..">
 </form>
@@ -55,6 +57,6 @@
 			</tbody>
 		</table>
 	</center>
-	<button><a href="http://127.0.0.1:5000/">Home</a></button>
+	<button id="home"><a href="http://127.0.0.1:5000/">Home</a></button>
 </body>
 </html>
